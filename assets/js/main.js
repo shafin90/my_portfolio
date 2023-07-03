@@ -54,3 +54,48 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+
+
+function initSliders() {
+    const sliders = document.querySelectorAll(".work__img-slider");
+
+    sliders.forEach((slider) => {
+      const slides = slider.querySelectorAll(".work__img-slide");
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.transform = `translateX(${(i - index) * 100}%)`;
+        });
+      }
+
+      // Function to move to the next slide
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      // Function to move to the previous slide
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      // Auto slide functionality (uncomment if you want the slider to auto-scroll)
+      // setInterval(nextSlide, 3000);
+
+      // Add event listeners to the navigation arrows
+      const nextArrow = slider.parentElement.querySelector(".work__img-slider-next");
+      const prevArrow = slider.parentElement.querySelector(".work__img-slider-prev");
+
+      if (nextArrow && prevArrow) {
+        nextArrow.addEventListener("click", nextSlide);
+        prevArrow.addEventListener("click", prevSlide);
+      }
+    });
+  }
+
+  // Call the function to initialize the sliders after the page has loaded
+  window.addEventListener("DOMContentLoaded", initSliders);
