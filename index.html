@@ -48,7 +48,7 @@
                 <h1 class="home__title">Hi, I'am <br><span class="home__title-color">Mashrafi Ahnam <br>
                         Shafin</span><br> Frontend <br> Web Developer</h1>
 
-                <a href="#" class="button">Contact</a>
+                <a href="#contact" class="button">Contact</a>
             </div>
 
             <div class="home__social">
@@ -163,7 +163,9 @@
 
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bxl-nodejs skills__icon'></i>
+                          
+
+                            <i class='bx bxl-node-js skills__icon'></i>
                             <span class="skills__name">Node.js</span>
                         </div>
                         <div class="skills__bar skills__node">
@@ -319,11 +321,11 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
+                <form action="" onsubmit="clearForm(event)" class="contact__form">
                     <input type="text" placeholder="Name" class="contact__input">
                     <input type="mail" placeholder="Email" class="contact__input">
                     <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Send" class="contact__button button">
+                    <input type="submit"  value="Send" class="contact__button button">
                 </form>
             </div>
         </section>
@@ -339,13 +341,14 @@
         </div>
 
     </footer>
+ 
 
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

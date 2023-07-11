@@ -99,3 +99,11 @@ function initSliders() {
 
   // Call the function to initialize the sliders after the page has loaded
   window.addEventListener("DOMContentLoaded", initSliders);
+
+
+
+function clearForm(e) {
+  e.preventDefault();
+  console.log(123);
+  e.target.reset();
+}

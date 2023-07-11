@@ -404,9 +404,20 @@ img {
   width: 65%;
 }
 
-.skills__ux {
-  width: 85%;
+.skills__react {
+  width: 90%;
 }
+.skills__node {
+  width: 60%;
+}
+
+.skills__express {
+  width: 70%;
+}
+.skills__mongodb {
+  width: 80%;
+}
+
 
 .skills__img {
   border-radius: .5rem;
