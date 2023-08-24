@@ -1,0 +1,673 @@
+ body {
+     overflow: hidden;
+     margin: 0px;
+     /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+ }
+
+
+
+
+ /* Frist show page  */
+ #first-show-page {
+     font-family: 'Roboto', sans-serif;
+     position: absolute;
+     z-index: 3;
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #9b59b6;
+     padding: 0px;
+ }
+
+
+ .first-show-page button {
+     width: 200px;
+     height: 60px;
+     border: 1px solid white;
+     background-color: #9b59b6;
+     color: white;
+     font-size: 20px;
+ }
+
+ .first-show-page button:hover {
+     background-color: white;
+     color: #9b59b6;
+     transition: 0.3s;
+     cursor: pointer;
+
+ }
+
+
+
+
+
+
+ .bottom-navbar-container {
+     position: absolute;
+     z-index: 2;
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     bottom: 0px;
+
+ }
+
+ .bottom-navbar {
+
+     width: 60vw;
+
+     background: transparent;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ .bottom-navbar li {
+     list-style: none;
+ }
+
+ .bottom-navbar li a {
+     font-family: 'Roboto', sans-serif;
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+ }
+
+
+
+
+
+
+ /* banner = First div that appear after 'first show page' */
+ .banner {
+     width: 100vw;
+     height: 100vh;
+     position: relative;
+     z-index: 1;
+     background-color: brown;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ /* This div contains banner-image-container and  banner-image-container contains banner-image */
+ .left-side-of-banner-image {
+     position: relative;
+     width: 50vw;
+     height: 100vh;
+     display: flex;
+
+     justify-content: center;
+     align-items: flex-start;
+
+ }
+
+ .banner-image {
+
+     width: 22vw;
+     height: 32vw;
+     z-index: 4;
+ }
+
+ #banner-image-cover {
+     position: absolute;
+     width: 22vw;
+     height: 32vw;
+     background-color: brown;
+     z-index: 5;
+ }
+
+
+
+ /* This div contains my bio. In this div, my information will be shown. */
+ .bio {
+     width: 50vw;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+
+ }
+
+ /* my name */
+ #banner-heading-name {
+     font-weight: 900;
+     font-family: 'Roboto', sans-serif;
+     color: white;
+     font-size: 70px;
+     margin-bottom: 0px;
+
+
+ }
+
+ /* react.js developer */
+ #designation {
+     font-family: 'Roboto', sans-serif;
+     color: aliceblue;
+     font-weight: 300;
+     font-size: 45px;
+     margin-top: 0px;
+ }
+
+ /* all buttons-=-=-= bio_button, skillsets, projects, contact information */
+ .bio_button {
+     border: 1px solid white;
+     width: 100px;
+     height: 40px;
+     background-color: brown;
+     color: white;
+     font-size: 17px;
+ }
+
+ .skillset {
+     border: 1px solid white;
+     width: 120px;
+     height: 40px;
+     background-color: brown;
+     color: white;
+     font-size: 17px;
+ }
+
+ .projects-btn {
+     border: 1px solid white;
+     width: 120px;
+     height: 40px;
+     background-color: brown;
+     color: white;
+     font-size: 17px;
+ }
+
+ .contact_information {
+     border: 1px solid white;
+     width: 200px;
+     height: 40px;
+     background-color: brown;
+     color: white;
+     font-size: 17px;
+ }
+
+ .bio_button:hover,
+ .skillset:hover,
+ .projects-btn:hover,
+ .contact_information:hover {
+     cursor: pointer;
+     background-color: white;
+     color: brown;
+     transition: 0.4s;
+ }
+
+
+
+ /* Now, here is all activities about bio page. */
+ #bio-details {
+     position: relative;
+     width: 100vw;
+     height: 100vh;
+     background-color: rgb(60, 60, 153);
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+ }
+
+
+
+ #bio-detail-description {
+     width: 40vw;
+     height: 100vh;
+
+     font-family: 'Raleway', sans-serif;
+     font-weight: 400;
+     font-size: 20px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     line-height: 2rem;
+     font-size: 23px;
+
+ }
+
+ #right-side-image-container {
+     width: 50vw;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .banner-btn-on-bio-details {
+     width: 100px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: rgb(60, 60, 153);
+     color: white;
+     font-size: 17px;
+ }
+
+ .skillset-on-bio-details {
+     width: 100px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: rgb(60, 60, 153);
+     color: white;
+     font-size: 17px;
+ }
+
+ .projects-on-bio-details {
+     width: 100px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: rgb(60, 60, 153);
+     color: white;
+     font-size: 17px;
+ }
+
+
+ .contact-information-on-bio-details {
+     width: 180px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: rgb(60, 60, 153);
+     color: white;
+     font-size: 17px;
+ }
+
+
+
+ .banner-btn-on-bio-details:hover,
+ .skillset-on-bio-details:hover,
+ .projects-on-bio-details:hover,
+ .contact-information-on-bio-details:hover {
+     cursor: pointer;
+     color: rgb(60, 60, 153);
+     background-color: white;
+     transition: 0.4s;
+ }
+
+
+
+ /* now lets work for skill section */
+ .skill-div {
+     width: 100vw;
+     height: 100vh;
+     background-color: #e17055;
+     color: white;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+
+
+ }
+
+ .some-text-about-skill {
+     width: 36vw;
+     height: 100vh;
+     padding: 0vw 4vw;
+     background-color: aliceblue;
+     color: #e17055;
+     font-family: 'Roboto', sans-serif;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .text-bold {
+     font-weight: bold;
+ }
+
+ .right-side-skill-showing-section {
+     width: 60vw;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .progress-bar {
+     border: 1px solid white;
+     display: inline-block;
+     width: 40vw;
+     height: 30px;
+ }
+
+ #progress-fill-html,
+ #progress-fill-css,
+ #progress-fill-javascript,
+ #progress-fill-bootstrap,
+ #progress-fill-tailwind,
+ #progress-fill-react,
+ #progress-fill-next,
+ #progress-fill-node,
+ #progress-fill-express,
+ #progress-fill-mongodb,
+ #progress-fill-redux,
+ #progress-fill-typescript {
+     display: inline-block;
+     position: relative;
+     width: 0%;
+     height: 100%;
+     background-color: white;
+     color: #e17055;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .banner-btn-in-skill-section {
+     width: 100px;
+     height: 40px;
+     color: #e17055;
+     border: 1px solid #e17055;
+     background-color: aliceblue;
+
+ }
+
+ .bio-btn-in-skill-section {
+     width: 60px;
+     height: 40px;
+     color: #e17055;
+     border: 1px solid #e17055;
+     background-color: aliceblue;
+
+ }
+
+ .projects-btn-in-skill-section {
+     width: 90px;
+     height: 40px;
+     color: #e17055;
+     border: 1px solid #e17055;
+     background-color: aliceblue;
+
+ }
+
+ .contact-information-btn-in-skill-section {
+     width: 160px;
+     height: 40px;
+     color: #e17055;
+     border: 1px solid #e17055;
+     background-color: aliceblue;
+
+ }
+
+ .banner-btn-in-skill-section:hover,
+ .bio-btn-in-skill-section:hover,
+ .projects-btn-in-skill-section:hover,
+ .contact-information-btn-in-skill-section:hover {
+     background-color: #e17055;
+     color: white;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+
+
+
+
+ /* lets work with projects section. My projects wil be shown side by side. */
+ .project-div {
+     width: 100vw;
+     height: 100vh;
+     background-color: #222f3e;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+
+ }
+
+ .projects-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .project-div-heading {
+     text-align: center;
+     color: white;
+     font-weight: 700;
+     font-size: 60px;
+     position: relative;
+     top: 50px;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ .projects-container {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 100vw;
+     height: 90vh;
+     overflow: hidden;
+ }
+
+ .card {
+     position: relative;
+     width: 400px;
+     height: 500px;
+     font-size: 13px;
+     font-family: 'Raleway', sans-serif;
+
+
+     border: 1px solid white;
+
+     background-color: #222f3e;
+     color: white;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ .card h3 {
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+
+ .card p {
+     padding-left: 10px;
+     padding-right: 10px;
+     line-height: 1.2rem;
+ }
+
+ .live-site {
+     color: white;
+     text-decoration: none;
+     width: 60px;
+     display: inline-block;
+     height: 30px;
+     border: 1px solid white;
+     background-color: #222f3e;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 11px;
+ }
+
+
+ .client-side,
+ .server-side {
+     color: white;
+     text-decoration: none;
+     width: 120px;
+     display: inline-block;
+     height: 30px;
+     border: 1px solid white;
+     background-color: #222f3e;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 11px;
+
+ }
+
+ .live-site:hover, .client-side:hover, .server-side:hover{
+    color: #222f3e;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.4s;
+ }
+
+ .button-holder-in-card {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .card img {
+     width: 100%;
+     height: 50%;
+
+ }
+
+
+ .project-div-bio-btn {
+     width: 60px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: #222f3e;
+     color: white;
+     font-size: 17px;
+ }
+
+ .project-div-banner-btn {
+     width: 100px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: #222f3e;
+     color: white;
+     font-size: 17px;
+ }
+
+
+ .project-div-skillset-btn {
+     width: 100px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: #222f3e;
+     color: white;
+     font-size: 17px;
+ }
+
+
+ .project-div-contact-information-btn {
+     width: 180px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: #222f3e;
+     color: white;
+     font-size: 17px;
+ }
+
+
+
+
+
+ .project-div-bio-btn:hover,
+ .project-div-banner-btn:hover,
+ .project-div-skillset-btn:hover,
+ .project-div-contact-information-btn:hover {
+     color: #222f3e;
+     background-color: white;
+     cursor: pointer;
+     transition: 0.4s;
+ }
+
+ .navigation-btn {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 94vw;
+     
+ }
+
+
+
+
+ /* lets work with contact information page */
+ .contact-information-div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #6D214F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ form{
+    width: 50vw;
+    height: 60vh;
+ }
+
+
+
+ @media screen and (max-width:575px) {
+     body{
+        overflow: hidden;
+     }
+     .left-side-of-banner-image{
+        width: 100vw;
+     }
+     #designation{
+        font-size: 35px;
+        text-align: center;
+        width: 100vw;
+     }
+     .banner-image {
+        width: 60vw;
+        height: 84vw;
+    }
+    #banner-image-cover{
+        width: 60vw;
+        height: 84vw;
+    }
+    .banner{
+        overflow-y: scroll;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .bio{
+        width: 100vw;
+    }
+    #banner-heading-name{
+        text-align: center;
+        font-size: 52px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #bio-details {
+        flex-direction: column;
+    }
+    #bio-detail-description {
+        width: 95vw;
+    }
+    .bio-details-btn-container{
+        width: 100vw;
+    }
+ }
