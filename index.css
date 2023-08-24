@@ -1,6 +1,7 @@
  body {
-     overflow: hidden;
+     
      margin: 0px;
+     overflow-x: hidden;
      /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,6 +87,34 @@
 
 
  /* banner = First div that appear after 'first show page' */
+
+ .banner-page-cover{
+    
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color:#6F1E51;
+    z-index: 10;
+    animation-name: anim;
+    animation-duration: 1s;
+    width: 0vw;
+    
+    
+
+
+ }
+ @keyframes anim {
+    from{
+        width:  100vw;
+
+    }
+    to{
+        width: 0vw;
+    }
+    
+ }
+ 
+ 
  .banner {
      width: 100vw;
      height: 100vh;
@@ -165,6 +194,7 @@
      background-color: brown;
      color: white;
      font-size: 17px;
+   
  }
 
  .skillset {
@@ -207,14 +237,42 @@
 
 
  /* Now, here is all activities about bio page. */
+ .bio-page-cover{
+    
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c3e50;
+    z-index: 3;
+    animation-name: anim;
+    animation-duration: 1s;
+    width: 0vw;
+    
+    
+
+
+ }
+ @keyframes anim {
+    from{
+        width: 100vw;
+
+    }
+    to{
+        width: 0vw;
+    }
+    
+ }
+ 
+ 
  #bio-details {
      position: relative;
      width: 100vw;
      height: 100vh;
-     background-color: rgb(60, 60, 153);
+     background-color: #2c2c54;
      display: flex;
      justify-content: flex-end;
      align-items: center;
+    
  }
 
 
@@ -231,8 +289,9 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     line-height: 2rem;
-     font-size: 23px;
+     line-height: 2.2vw;
+     font-size: 1.5vw;
+    
 
  }
 
@@ -244,12 +303,22 @@
      justify-content: space-evenly;
      align-items: center;
  }
+ #bio-details-image{
+    width: 50%;
+    height: 50%;
 
+ }
+ .about-me{
+    font-family: 'Josefin Slab', serif;
+    font-size: 5vw;
+    width: 100%;
+    /* line-height: 75px; */
+ }
  .banner-btn-on-bio-details {
      width: 100px;
      height: 40px;
      border: 1px solid white;
-     background-color: rgb(60, 60, 153);
+     background-color: #2c2c54;
      color: white;
      font-size: 17px;
  }
@@ -258,7 +327,7 @@
      width: 100px;
      height: 40px;
      border: 1px solid white;
-     background-color: rgb(60, 60, 153);
+     background-color: #2c2c54;
      color: white;
      font-size: 17px;
  }
@@ -267,7 +336,7 @@
      width: 100px;
      height: 40px;
      border: 1px solid white;
-     background-color: rgb(60, 60, 153);
+     background-color: #2c2c54;
      color: white;
      font-size: 17px;
  }
@@ -277,7 +346,7 @@
      width: 180px;
      height: 40px;
      border: 1px solid white;
-     background-color: rgb(60, 60, 153);
+     background-color: #2c2c54;
      color: white;
      font-size: 17px;
  }
@@ -289,7 +358,7 @@
  .projects-on-bio-details:hover,
  .contact-information-on-bio-details:hover {
      cursor: pointer;
-     color: rgb(60, 60, 153);
+     color: #2c2c54;
      background-color: white;
      transition: 0.4s;
  }
@@ -297,11 +366,37 @@
 
 
  /* now lets work for skill section */
+ .skill-page-cover{
+    
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #747d8c;
+    z-index: 3;
+    animation-name: anim;
+    animation-duration: 1s;
+    width: 0vw;
+    
+    
+
+
+ }
+ @keyframes anim {
+    from{
+        width:100vw;
+
+    }
+    to{
+        width: 0vw;
+    }
+    
+ }
+ 
  .skill-div {
      width: 100vw;
      height: 100vh;
-     background-color: #e17055;
-     color: white;
+     background-color: #4b4b4b;
+     color: rgb(175, 175, 175);
      font-family: Georgia, 'Times New Roman', Times, serif;
      font-size: 20px;
      display: flex;
@@ -316,15 +411,19 @@
      width: 36vw;
      height: 100vh;
      padding: 0vw 4vw;
-     background-color: aliceblue;
-     color: #e17055;
-     font-family: 'Roboto', sans-serif;
+     background-color: rgb(175, 175, 175);
+     color: #4b4b4b;
+     /* font-family: 'Josefin Slab', serif; */
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: flex-start;
  }
-
+ .some-text-about-skill h1{
+    font-family: 'Josefin Slab', serif;
+    font-size: 4vw;
+    font-weight: 400;
+ }
  .text-bold {
      font-weight: bold;
  }
@@ -339,7 +438,7 @@
  }
 
  .progress-bar {
-     border: 1px solid white;
+     border: 1px solid rgb(175, 175, 175);
      display: inline-block;
      width: 40vw;
      height: 30px;
@@ -361,8 +460,8 @@
      position: relative;
      width: 0%;
      height: 100%;
-     background-color: white;
-     color: #e17055;
+     background-color: rgb(175, 175, 175);
+     color: #4b4b4b;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -371,36 +470,36 @@
  .banner-btn-in-skill-section {
      width: 100px;
      height: 40px;
-     color: #e17055;
-     border: 1px solid #e17055;
-     background-color: aliceblue;
+     color: #4b4b4b;
+     border: 1px solid #4b4b4b;
+     background-color: rgb(175, 175, 175);
 
  }
 
  .bio-btn-in-skill-section {
      width: 60px;
      height: 40px;
-     color: #e17055;
-     border: 1px solid #e17055;
-     background-color: aliceblue;
+     color: #4b4b4b;
+     border: 1px solid #4b4b4b;
+     background-color: rgb(175, 175, 175);
 
  }
 
  .projects-btn-in-skill-section {
      width: 90px;
      height: 40px;
-     color: #e17055;
-     border: 1px solid #e17055;
-     background-color: aliceblue;
+     color: #4b4b4b;
+     border: 1px solid #4b4b4b;
+     background-color: rgb(175, 175, 175);
 
  }
 
  .contact-information-btn-in-skill-section {
      width: 160px;
      height: 40px;
-     color: #e17055;
-     border: 1px solid #e17055;
-     background-color: aliceblue;
+     color: #4b4b4b;
+     border: 1px solid #4b4b4b;
+     background-color: rgb(175, 175, 175);
 
  }
 
@@ -408,8 +507,8 @@
  .bio-btn-in-skill-section:hover,
  .projects-btn-in-skill-section:hover,
  .contact-information-btn-in-skill-section:hover {
-     background-color: #e17055;
-     color: white;
+     background-color: #4b4b4b;
+     color: rgb(175, 175, 175);
      cursor: pointer;
      transition: 0.3s;
  }
@@ -419,6 +518,35 @@
 
 
  /* lets work with projects section. My projects wil be shown side by side. */
+ .project-page-cover{
+    
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c2c54;
+    z-index: 10;
+    animation-name: anim;
+    animation-duration: 1s;
+    width: 0vw;
+    
+    
+
+
+ }
+ @keyframes anim {
+    from{
+        width: 100vw;
+
+    }
+    to{
+        width: 0vw;
+    }
+    
+ }
+ 
+ 
+ 
+ 
  .project-div {
      width: 100vw;
      height: 100vh;
@@ -526,7 +654,11 @@
  }
 
  .card img {
-     width: 100%;
+     width: 95%;
+     position: relative;
+     left: 2.5%;
+     right: 2.5%;
+     margin-top: 2.5%;
      height: 50%;
 
  }
@@ -596,6 +728,36 @@
 
 
  /* lets work with contact information page */
+ 
+ .contact-information-page-cover{
+    
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a2d57;
+    z-index: 10;
+    animation-name: anim;
+    animation-duration: 1s;
+    width: 0vw;
+    
+    
+
+
+ }
+ @keyframes anim {
+    from{
+        width: 100vw;
+
+    }
+    to{
+        width: 0vw;
+    }
+    
+ }
+ 
+ 
+ 
+ 
  .contact-information-div{
     width: 100vw;
     height: 100vh;
@@ -605,45 +767,150 @@
     align-items: center;
  }
  form{
+    /* position: relative;
+    right: 20vw; */
     width: 50vw;
     height: 60vh;
+    color: white;
+    font-size: 25px;
+    font-family: 'Jura', sans-serif;
  }
 
 
+.text-area{
+    border: 1px solid white;
+    background-color: antiquewhite;
+}
+.send-btn{
+    width: 80px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
 
- @media screen and (max-width:575px) {
-     body{
-        overflow: hidden;
-     }
-     .left-side-of-banner-image{
-        width: 100vw;
-     }
-     #designation{
-        font-size: 35px;
-        text-align: center;
-        width: 100vw;
-     }
-     .banner-image {
-        width: 60vw;
-        height: 84vw;
-    }
-    #banner-image-cover{
-        width: 60vw;
-        height: 84vw;
-    }
-    .banner{
-        overflow-y: scroll;
+.send-btn:hover{
+    cursor: pointer;
+    color: #6D214F;
+    background-color: white;
+    transition: 0.4s;
+}
+ 
+.contact-pages-btn-container{
+    position: relative;
+    top: 40vh;
+    left: 5vw;
+}
+
+.contact-banner-btn{
+    width: 70px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    
+}
+.contact-bio-btn{
+    width: 50px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    
+}
+.contact-skillset-btn{
+    width: 80px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    
+}
+.contact-projects-btn{
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    
+}
+.contact-banner-btn:hover, .contact-bio-btn:hover, .contact-projects-btn:hover, .contact-skillset-btn:hover{
+    background-color: white;
+    color: #6D214F;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.github-resume-container{
+    position: relative;
+    top: 20px;
+}
+
+
+
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.html-div{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+
+    
+    .banner {
+        
         height: 100vh;
         flex-direction: column;
-    }
-    .bio{
-        width: 100vw;
+        justify-content: flex-start;
+        align-items: center;
     }
     #banner-heading-name{
-        text-align: center;
-        font-size: 52px;
+        font-size: 12vw;
     }
-    
+    #designation{
+        font-size: 9vw;
+    }
+    .left-side-of-banner-image{
+        width: 55vw;
+        height: 80vw;
+    }
+    .banner-image{
+        width: 100%;
+        height: 100%;
+    }
+    #banner-image-cover{
+        width: 55vw;
+        height: 80vw;
+    }
+    .bio{
+        width: 90vw;
+    }
+    .contact_information{
+        margin-top: 4px;
+    }
 
 
 
@@ -651,23 +918,268 @@
 
 
 
+    .bio-page-cover{
+        height: 350vw;
+    }
 
-
-
-
-
-
-
-
-
-
-    #bio-details {
+    #bio-details{
         flex-direction: column;
+        height: 350vw;
+        justify-content: center;
+        align-items: center;
     }
-    #bio-detail-description {
-        width: 95vw;
+    #bio-details-image {
+        width: 100%;
+        height: 65%;
     }
-    .bio-details-btn-container{
-        width: 100vw;
+    #bio-detail-description{
+        width: 80%;
+        height: 172vw;
+        font-size: 5vw;
+        line-height: 6.5vw;
     }
- }
+    #right-side-image-container{
+        width: 80%;
+        height: 125vw;
+    }
+    .contact-information-on-bio-details{
+        margin-top: 4px;
+    }
+
+    .about-me{
+        font-size: 12vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .skill-page-cover{
+        height: 391vw;
+    }
+    .skill-div{
+
+        height: 391vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .some-text-about-skill{
+        height: 192vw;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .some-text-about-skill p{
+        line-height: 8.5vw;
+    }
+    .right-side-skill-showing-section{
+        width: 100%;
+        height: 177vw;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .contact-information-btn-in-skill-section{
+        margin-top: 5px;
+    }
+    .some-text-about-skill h1{
+        font-size: 11vw;
+        color: #4b4b4b;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .project-page-cover{
+        height: 500vh;
+    }
+/* extraaaaaaaaaaaaaaaaa */
+    .project-div{
+        /* flex-direction: column; */
+        height: 500vh;
+    }
+    .projects-container{
+        flex-direction: column;
+        height: 450vh;
+    }
+
+
+    .navigation-btn{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 20vh;
+    }
+    .card{
+        width: 93vw;
+        height: 150vw;
+        
+    }
+    .card p{
+        line-height: 7vw;
+        padding: 0px;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        right: 5%;
+
+    }
+    .card img {
+        width: 90%;
+        height: 40%;
+        position: relative;
+        left: 5%;
+        right: 5%;
+        margin-top: 5%;
+
+    }
+    .card h3{
+        padding: 0px;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        right: 5%;
+    }
+    .projects-container{
+        height: 485vw;
+    }
+    .project-div{
+        height: 550vw;
+    }
+    .project-div-contact-information-btn{
+        margin-top: 4px;
+    }
+
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
+    
+    .contact-information-div{
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        width: 80vw;
+        height: 80vh;
+    }    
+    .contact-pages-btn-container{
+        top: 0px;
+        height: 0px;
+    }
+    .text-area{
+        width: 50vw;
+    }
+
+}

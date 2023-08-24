@@ -26,11 +26,53 @@
 
 
 
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Nunito+Sans:wght@300;400;500;700;900&family=Raleway:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+    <!--google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Jura:wght@300&family=Nunito+Sans:wght@300;400;500;700;900&family=Raleway:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+
+
     <!-- css link -->
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <audio id="clickSound">
+        <source src="./audio/hard-pop.wav" type="audio/mpeg">
+       
+     </audio>
+
+     <audio id="navigateSound">
+        <source src="./audio/long-pop.wav" type="audio/mpeg">
+       
+     </audio>
+
+
+     <audio id="linkRedirectSound">
+        <source src="./audio/bubble-up.wav" type="audio/mpeg">
+       
+     </audio>
+
+
+
+
+
     <!-- first show page . Its position is absolute and z-index is 3-->
     <div class="first-show-page" id="first-show-page">
         <button id="first-show-page-button">Visit the portfolio</button>
@@ -43,6 +85,9 @@
 
     <!-- banner = first div that appear after 'first show page'. In this banner there will be my image in the left side and my details with a heading at the right side -->
     <div class="banner" id="banner">
+        <div class="banner-page-cover">
+
+        </div>
 
         <!-- left side = my image -->
         <div class="left-side-of-banner-image">
@@ -58,7 +103,7 @@
 
         <div class="bio">
             <h1 id="banner-heading-name">Mashrafi Ahnam Shafin</h1>
-            <h2 id="designation">MERN Stack Developer</h2>
+            <h2 id="designation">React.js Developer</h2>
 
             <!-- button container -->
             <div class="button_container">
@@ -68,15 +113,30 @@
                 <button class="contact_information contact-information-btn" id="contact_information">Contact
                     Information</button>
             </div>
+
+
+
+
+            <!-- button container -->
+            <div class="github-resume-container">
+                <button id="github-btn" class="bio_button ">Github</button>
+                <button id="linkedIn-btn" class="bio_button ">LinkedIn</button>
+                <button id="downloadButton" class="contact_information redirect-link">Resume Download</button>
+
+            </div>
         </div>
 
     </div>
 
     <!-- Here is all activities about Bio page. In this page, there will be an image at the right side and my bio deatils at the left side. bottom of the image, there will be navigation  buttons -->
+    <!-- <div id="bio-page-cover"></div> -->
 
     <div id="bio-details">
+        <div class="bio-page-cover"></div>
+
 
         <div id="bio-detail-description">
+            <p class="about-me">About Me</p>
 
             <article>
                 Passionate MERN Stack Developer specializing in React and Next.js, dedicated to crafting seamless
@@ -92,7 +152,7 @@
 
 
         <div id="right-side-image-container">
-            <img id="bio-details-image" src="https://i.ibb.co/Mk2hJzx/1689281205814.jpg" alt="">
+            <img id="bio-details-image" src="https://i.ibb.co/TWSX9yb/Untitled-design.png" alt="">
             <div class="bio-details-btn-container">
                 <button class="banner-btn-on-bio-details banner-btn " id="banner-btn">Banner</button>
                 <button class="skillset-on-bio-details skillset skillset-btn">Skillset</button>
@@ -108,6 +168,10 @@
 
     <!-- Now lets work about skillset. Here all my skill will be shown with progressbar. at the bottom there will be navigation button -->
     <div class="skill-div" id="skill-div">
+
+        <div class="skill-page-cover">
+
+        </div>
 
         <!-- some text about my skill and navigation buttons section -->
         <div class="some-text-about-skill">
@@ -143,71 +207,74 @@
         <!-- skill showing section -->
         <div class="right-side-skill-showing-section">
             <!-- div for html -->
-            <div class="html-div">
+            <div class="html-div flex">
                 <span>HTML</span> <span class="progress-bar"> <span id="progress-fill-html">90%</span> </span>
             </div>
 
 
 
             <!-- div for css -->
-            <div class="html-div">
-                <span>CSS</span> <span class="progress-bar"> <span id="progress-fill-css"></span> </span>
+            <div class="html-div flex">
+                <span>CSS</span> <span><span class="progress-bar"> <span id="progress-fill-css">85%</span>
+                    </span></span>
             </div>
 
 
             <!-- div for javascript -->
-            <div class="html-div">
-                <span>Javascript</span> <span class="progress-bar"> <span id="progress-fill-javascript"></span> </span>
+            <div class="html-div flex">
+                <span>Javascript</span> <span class="progress-bar"> <span id="progress-fill-javascript">80%</span>
+                </span>
             </div>
 
 
 
             <!-- div for Bootstsrap -->
-            <div class="html-div">
-                <span>Bootstrap</span> <span class="progress-bar"> <span id="progress-fill-bootstrap"></span> </span>
+            <div class="html-div flex">
+                <span>Bootstrap</span> <span class="progress-bar"> <span id="progress-fill-bootstrap">80%</span> </span>
             </div>
 
 
 
 
             <!-- div for html -->
-            <div class="html-div">
-                <span>Tailwind</span> <span class="progress-bar"> <span id="progress-fill-tailwind"></span> </span>
+            <div class="html-div flex">
+                <span>Tailwind</span> <span class="progress-bar"> <span id="progress-fill-tailwind">65%</span> </span>
             </div>
 
 
             <!-- div for html -->
-            <div class="html-div">
-                <span>React.js</span> <span class="progress-bar"> <span id="progress-fill-react"></span> </span>
+            <div class="html-div flex">
+                <span>React.js</span> <span class="progress-bar"> <span id="progress-fill-react">70%</span> </span>
             </div>
 
             <!-- div for html -->
-            <div class="html-div">
-                <span>Next.js</span> <span class="progress-bar"> <span id="progress-fill-next"></span> </span>
+            <div class="html-div flex">
+                <span>Next.js</span> <span class="progress-bar"> <span id="progress-fill-next">60%</span> </span>
             </div>
 
             <!-- div for html -->
-            <div class="html-div">
-                <span>Node.js</span> <span class="progress-bar"> <span id="progress-fill-node"></span> </span>
+            <div class="html-div flex">
+                <span>Node.js</span> <span class="progress-bar"> <span id="progress-fill-node">60%</span> </span>
             </div>
 
             <!-- div for html -->
-            <div class="html-div">
-                <span>Express.js</span> <span class="progress-bar"> <span id="progress-fill-express"></span> </span>
+            <div class="html-div flex">
+                <span>Express.js</span> <span class="progress-bar"> <span id="progress-fill-express">70%</span> </span>
             </div>
 
             <!-- div for html -->
-            <div class="html-div">
-                <span>MongoDB</span> <span class="progress-bar"> <span id="progress-fill-mongodb"></span> </span>
+            <div class="html-div flex">
+                <span>MongoDB</span> <span class="progress-bar"> <span id="progress-fill-mongodb">60%</span> </span>
             </div>
             <!-- div for html -->
-            <div class="html-div">
-                <span>Redux</span> <span class="progress-bar"> <span id="progress-fill-redux"></span> </span>
+            <div class="html-div flex">
+                <span>Redux</span> <span class="progress-bar"> <span id="progress-fill-redux">60%</span> </span>
             </div>
 
             <!-- div for html -->
-            <div class="html-div">
-                <span>Typescript</span> <span class="progress-bar"> <span id="progress-fill-typescript"></span> </span>
+            <div class="html-div flex">
+                <span>Typescript</span> <span class="progress-bar"> <span id="progress-fill-typescript">60%</span>
+                </span>
             </div>
 
 
@@ -222,9 +289,16 @@
 
 
     <!-- Lets work with projects section. Here all of my projects wil be shown side by side . There might be a scroll bar at the bottom to slide left or right if it is needed to show -->
+
+   
+
+
     <div class="project-div" id="project-div">
         <!-- <h1 class="project-div-heading">My projects</h1> -->
 
+        <div class="project-page-cover">
+
+        </div>
         <div class="projects-container">
 
             <!-- first project -->
@@ -238,9 +312,9 @@
                     system. User authentication implemented using firebase. Admin-mail: admin@gmail.com. Password:
                     1Mrbdn@#</p>
                 <div class="button-holder-in-card">
-                    <a class="live-site" href="live-side-link">Live Site</a>
-                    <a class="client-side" href="client-side-repo-link">Client-side Repository</a>
-                    <a class="server-side" href="server-side-repo-link">Server-side Repository</a>
+                    <a class="live-site redirect-link" href="https://zen-dojo-67158.web.app/">Live Site</a>
+                    <a class="client-side redirect-link" href="https://github.com/shafin90/zen-dojo-client">Client-side Repository</a>
+                    <a class="server-side redirect-link" href="https://github.com/shafin90/zen-dojo-server">Server-side Repository</a>
                 </div>
             </div>
 
@@ -256,9 +330,11 @@
                     project. User authentication implemented using firebase. Express.js is used as a Node.js framework
                 </p>
                 <div class="button-holder-in-card">
-                    <a class="live-site" href="live-side-link">Live Site</a>
-                    <a class="client-side" href="client-side-repo-link">Client-side Repository</a>
-                    <a class="server-side" href="server-side-repo-link">Server-side Repository</a>
+                    <a class="live-site redirect-link" href="https://carz-fe969.web.app/">Live Site</a>
+                    <a class="client-side redirect-link" href="https://github.com/shafin90/toy-marketplace-client-side">Client-side
+                        Repository</a>
+                    <a class="server-side redirect-link" href="https://github.com/shafin90/toy-marketplace-server-side">Server-side
+                        Repository</a>
                 </div>
             </div>
 
@@ -273,9 +349,10 @@
                     their detailed information. This is a MERN project. Express.js is used for creating API. Firebase is
                     used for authentication</p>
                 <div class="button-holder-in-card">
-                    <a class="live-site" href="live-side-link">Live Site</a>
-                    <a class="client-side" href="client-side-repo-link">Client-side Repository</a>
-                    <a class="server-side" href="server-side-repo-link">Server-side Repository</a>
+                    <a class="live-site redirect-link" href="https://chef-14558.web.app/">Live Site</a>
+                    <a class="client-side redirect-link" href="https://github.com/shafin90/food_fest">Client-side Repository</a>
+                    <a class="server-side redirect-link" href="https://github.com/shafin90/food_fest_server">Server-side
+                        Repository</a>
                 </div>
             </div>
         </div>
@@ -284,8 +361,8 @@
 
         <div class="navigation-btn">
             <div>
-                <button class="project-div-banner-btn">Github</button>
-                <button class="project-div-contact-information-btn">Download Resume</button>
+                <button id="github-btnn" class="project-div-banner-btn">Github</button>
+                <button id="downloadButtonn" class="project-div-contact-information-btn redirect-link">Resume Download</button>
             </div>
 
 
@@ -315,18 +392,27 @@
     <!-- lets work with contact information -->
     <div class="contact-information-div" id="contact-information-div">
 
+        <div class="contact-information-page-cover">
+            
+        </div>
         <form>
-        
-            
+
+
             <p>Email: shafinahnam89@gmail.com</p>
-            
+
             <p>Phone Number: 01620674384</p>
-            
-            <p>LinkedIn: https://www.linkedin.com/in/mashrafi-ahnam/</p>
-            <label for="newMessage">Send me message:</label>
-            <textarea id="newMessage" name="newMessage" rows="4" required></textarea>
-            <button type="submit">send</button>
+
+
+            <p>Send me message:</p>
+            <textarea id="newMessage" class="text-area" name="newMessage" rows="8" cols="50" required></textarea>
+            <button class="send-btn" type="submit">send</button>
         </form>
+        <div class="contact-pages-btn-container">
+            <button class="contact-banner-btn banner-btn">Banner</button>
+            <button class="contact-bio-btn bio-btn">Bio</button>
+            <button class="contact-skillset-btn skillset-btn">Skillset</button>
+            <button class="contact-projects-btn projects-btn">Project</button>
+        </div>
     </div>
 
 

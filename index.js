@@ -1,12 +1,16 @@
 const first_show_page = document.getElementById('first-show-page');
 const first_show_page_button = document.getElementById('first-show-page-button');
+
 const banner = document.getElementById('banner');
 const banner_image = document.getElementById("banner-image");
 const banner_image_cover = document.getElementById('banner-image-cover');
 const banner_heading_name = document.getElementById('banner-heading-name');
 const designation = document.getElementById('designation');
-const bio= document.getElementById('bio-details')
+
+const bio = document.getElementById('bio-details')
+
 const project_div = document.getElementById('project-div');
+
 const contact_information_div = document.getElementById('contact-information-div');
 
 // Button
@@ -36,10 +40,254 @@ const progress_fill_typescript = document.getElementById('progress-fill-typescri
 
 
 
+const redirect_link = document.getElementsByClassName('redirect-link');//This class catch all the redirects button like, resume download, github, live site, server site.....
+// sound declaration
+const clickSound = document.getElementById("clickSound");
+const navigateSound = document.getElementById("navigateSound");
+const redirectNavigateSound = document.getElementById("linkRedirectSound");
+
+
+
+
+
+
+
+for(item of redirect_link){
+    item.addEventListener('click',()=>{
+        redirectNavigateSound.play();
+
+    })
+}
+
+
+
+// resume download
+document.getElementById("downloadButton").addEventListener("click", function () {
+
+    let filename = "resume.pdf";
+
+    // Replace 'path_to_resume' with the actual path to your resume file
+    let path = "./resume/" + filename;
+
+    let link = document.createElement("a");
+    link.href = path;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+document.getElementById("downloadButtonn").addEventListener("click", function () {
+    
+    let filename = "resume.pdf";
+
+    // Replace 'path_to_resume' with the actual path to your resume file
+    let path = "./resume/" + filename;
+
+    let link = document.createElement("a");
+    link.href = path;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+
+
+
+
+
+
+// github redirected
+document.getElementById("github-btn").addEventListener("click", function() {
+    clickSound.play();
+    window.location.href = "https://github.com/shafin90"; // Replace with your GitHub profile URL
+});
+document.getElementById("github-btnn").addEventListener("click", function() {
+    clickSound.play();
+    window.location.href = "https://github.com/shafin90"; // Replace with your GitHub profile URL
+});
+
+
+
+
+
+// LinkedIn redirected
+document.getElementById("linkedIn-btn").addEventListener("click", function() {
+    clickSound.play();
+    window.location.href = "https://www.linkedin.com/in/mashrafi-ahnam-45650b264/"; // Replace with your GitHub profile URL
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//all page's cover
+const bio_page_cover = document.getElementById('bio-page-cover');
+
+
+let html = 0;
+let css = 0;
+let javascript = 0;
+let bootstrap = 0;
+let react = 0;
+let next = 0;
+let node = 0;
+let express = 0;
+let mongodb = 0;
+let redux = 0;
+let typescript = 0;
+let tailwind = 0;
+
+
+
+const pointIncreaser = () => {
+
+
+    setInterval(() => {
+        if (html < 91) {
+            html = html + 1;
+            progress_fill_html.innerText = html + '%';
+        }
+        if (css < 85) {
+            css = css + 1;
+            progress_fill_css.innerText = css + '%';
+        }
+
+
+        if (javascript < 88) {
+            javascript = javascript + 1;
+            progress_fill_javascript.innerText = javascript + '%';
+        }
+
+
+
+        if (bootstrap < 85) {
+            bootstrap = bootstrap + 1;
+            progress_fill_bootstrap.innerText = bootstrap + '%';
+        }
+
+
+
+        if (tailwind < 60) {
+            tailwind = tailwind + 1;
+            progress_fill_tailwind.innerText = tailwind + '%';
+        }
+
+
+
+        if (react < 85) {
+            react = react + 1;
+            progress_fill_react.innerText = react + '%';
+        }
+
+
+
+
+        if (next < 60) {
+            next = next + 1;
+            progress_fill_next.innerText = next + '%';
+        }
+
+
+        if (node < 50) {
+            node = node + 1;
+            progress_fill_node.innerText = node + '%';
+        }
+
+
+
+
+
+        if (express < 85) {
+            express = express + 1;
+            progress_fill_express.innerText = express + '%';
+        }
+
+
+
+
+        if (mongodb < 60) {
+            mongodb = mongodb + 1;
+            progress_fill_mongodb.innerText = mongodb + '%';
+        }
+
+
+
+        if (redux < 60) {
+            redux = redux + 1;
+            progress_fill_redux.innerText = redux + '%';
+        }
+
+
+        if (typescript < 50) {
+            typescript = typescript + 1;
+            progress_fill_typescript.innerText = typescript + '%';
+        }
+    }, 30)
+
+
+
+
+
+}
+
+
+
+
+
+// progress-fill work
+progress_fill_html.innerText = html;
+progress_fill_css.innerText = css;
+progress_fill_javascript.innerText = javascript;
+progress_fill_bootstrap.innerText = bootstrap;
+progress_fill_react.innerText = react;
+progress_fill_next.innerText = next;
+progress_fill_node.innerText = node;
+progress_fill_express.innerText = express;
+progress_fill_mongodb.innerText = mongodb;
+progress_fill_tailwind.innerText = tailwind;
+progress_fill_redux.innerText = redux;
+progress_fill_typescript.innerText = typescript;
+
+
+
+
+bio.style.display = 'none';
+skill_div.style.display = 'none';
+project_div.style.display = 'none';
+contact_information_div.style.display = 'none';
+
+
+
+
+
+
 first_show_page.addEventListener('click', () => {
+    clickSound.play();
     first_show_page_button.style.display = 'none';
     first_show_page.style.height = '0px';
     first_show_page.style.transition = '0.3s';
+    banner.style.display = 'flex';
+    bio.style.display = 'none';
+    skill_div.style.display = 'none';
+    project_div.style.display = 'none';
+    contact_information_div.style.display = 'none';
     setTimeout(() => {
         banner_image_cover.style.height = "0vw";
         banner_image_cover.style.transition = '0.4s';
@@ -48,7 +296,27 @@ first_show_page.addEventListener('click', () => {
 
 
 
-for(item of bio_button){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for (item of bio_button) {
     item.addEventListener('click', () => {
         // banner_heading_name.style.display = "none";
         // designation.style.display = "none";
@@ -61,23 +329,48 @@ for(item of bio_button){
         // banner.style.width = '0vw'
         // banner.style.transition = '0.4s';
         // setTimeout(() => {
-            // document.documentElement.style.scrollBehavior = 'smooth';
-            // window.scrollTo(0, screen.height);
+        // document.documentElement.style.scrollBehavior = 'smooth';
+        // window.scrollTo(0, screen.height);
 
-            
+
         // }, 300)
-        
 
+
+        // cover-page-activities
+
+
+
+
+
+
+        navigateSound.play();
+
+        bio.style.display = 'flex';
         bio.scrollIntoView({ behavior: 'smooth' });
+        banner.style.display = 'none';
+        skill_div.style.display = 'none';
+        project_div.style.display = 'none';
+        contact_information_div.style.display = 'none';
     })
 }
 
 
 
 
-for(item of banner_btn){
-    item.addEventListener('click',()=>{
+for (item of banner_btn) {
+    item.addEventListener('click', () => {
+        // cover-page-activities
+
+
+
+        navigateSound.play();
+
+        banner.style.display = 'flex';
         banner.scrollIntoView({ behavior: 'smooth' });
+        bio.style.display = 'none';
+        skill_div.style.display = 'none';
+        project_div.style.display = 'none';
+        contact_information_div.style.display = 'none';
     })
 }
 
@@ -102,64 +395,100 @@ for(item of banner_btn){
 
 
 // lets work with skillset button
-for(item of skillsett){
-    item.addEventListener('click',()=>{
+for (item of skillsett) {
+    item.addEventListener('click', () => {
+
+        // cover-page-activities
+
+
+
+
+        navigateSound.play();
+
+
+
+        pointIncreaser();
+
+
+
+        skill_div.style.display = 'flex';
         skill_div.scrollIntoView({ behavior: 'smooth' });
-        progress_fill_html.style.width='38vw';
-        progress_fill_html.style.transition='2s';
 
-        progress_fill_css.style.width='35vw';
-        progress_fill_css.style.transition='2s';
-
-
-
-        progress_fill_javascript.style.width='37vw';
-        progress_fill_javascript.style.transition='2s';
-
-
-        progress_fill_bootstrap.style.width='35vw';
-        progress_fill_bootstrap.style.transition='2s';
-
-
-        progress_fill_tailwind.style.width='30vw';
-        progress_fill_tailwind.style.transition='2s';
-
-
-        progress_fill_react.style.width='38vw';
-        progress_fill_react.style.transition='2s';
+        banner.style.display = 'none';
+        bio.style.display = 'none';
+        project_div.style.display = 'none';
+        contact_information_div.style.display = 'none';
 
 
 
-        progress_fill_next.style.width='30vw';
-        progress_fill_next.style.transition='2s';
-        
-        
-        progress_fill_node.style.width='25vw';
-        progress_fill_node.style.transition='2s';
 
+        progress_fill_html.style.width = '38vw';
+        progress_fill_html.style.transition = '2s';
 
-        progress_fill_express.style.width='35vw';
-        progress_fill_express.style.transition='2s';
+        progress_fill_css.style.width = '35vw';
+        progress_fill_css.style.transition = '2s';
 
 
 
-        progress_fill_mongodb.style.width='30vw';
-        progress_fill_mongodb.style.transition='2s';
-
-        progress_fill_redux.style.width='30vw';
-        progress_fill_redux.style.transition='2s';
+        progress_fill_javascript.style.width = '37vw';
+        progress_fill_javascript.style.transition = '2s';
 
 
-        progress_fill_typescript.style.width='25vw';
-        progress_fill_typescript.style.transition='2s';
+        progress_fill_bootstrap.style.width = '35vw';
+        progress_fill_bootstrap.style.transition = '2s';
+
+
+        progress_fill_tailwind.style.width = '30vw';
+        progress_fill_tailwind.style.transition = '2s';
+
+
+        progress_fill_react.style.width = '38vw';
+        progress_fill_react.style.transition = '2s';
+
+
+
+        progress_fill_next.style.width = '30vw';
+        progress_fill_next.style.transition = '2s';
+
+
+        progress_fill_node.style.width = '25vw';
+        progress_fill_node.style.transition = '2s';
+
+
+        progress_fill_express.style.width = '35vw';
+        progress_fill_express.style.transition = '2s';
+
+
+
+        progress_fill_mongodb.style.width = '30vw';
+        progress_fill_mongodb.style.transition = '2s';
+
+        progress_fill_redux.style.width = '30vw';
+        progress_fill_redux.style.transition = '2s';
+
+
+        progress_fill_typescript.style.width = '25vw';
+        progress_fill_typescript.style.transition = '2s';
     })
 }
 
 
 // lets work with project btn
-for(item of projects){
-    item.addEventListener('click',()=>{
+for (item of projects) {
+    item.addEventListener('click', () => {
+        // cover-page-activities
+
+
+        navigateSound.play();
+
+
+
+        project_div.style.display = 'flex';
         project_div.scrollIntoView({ behavior: 'smooth' });
+        bio.style.display = 'none';
+        banner.style.display = 'none';
+        skill_div.style.display = 'none';
+        contact_information_div.style.display = 'none';
 
     })
 }
@@ -174,12 +503,32 @@ for(item of projects){
 
 
 
-for(item of contact_information){
-    item.addEventListener('click',()=>{
+for (item of contact_information) {
+    item.addEventListener('click', () => {
+        // cover-page-activities
+
+
+
+        navigateSound.play();
+
+
+
+        contact_information_div.style.display = 'flex';
         contact_information_div.scrollIntoView({ behavior: 'smooth' });
+        banner.style.display = 'none';
+        bio.style.display = 'none';
+        skill_div.style.display = 'none';
+        project_div.style.display = 'none'
     })
 }
 
 
 
 
+
+
+
+
+const ar = [12,2,3,4]
+
+console.log(isArray(ar))
