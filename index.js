@@ -31,12 +31,12 @@ const progress_fill_javascript = document.getElementById('progress-fill-javascri
 const progress_fill_bootstrap = document.getElementById('progress-fill-bootstrap');
 const progress_fill_tailwind = document.getElementById('progress-fill-tailwind');
 const progress_fill_react = document.getElementById('progress-fill-react');
-const progress_fill_next = document.getElementById('progress-fill-next');
+// const progress_fill_next = document.getElementById('progress-fill-next');
 const progress_fill_node = document.getElementById('progress-fill-node');
 const progress_fill_express = document.getElementById('progress-fill-express');
 const progress_fill_mongodb = document.getElementById('progress-fill-mongodb');
-const progress_fill_redux = document.getElementById('progress-fill-redux');
-const progress_fill_typescript = document.getElementById('progress-fill-typescript');
+// const progress_fill_redux = document.getElementById('progress-fill-redux');
+// const progress_fill_typescript = document.getElementById('progress-fill-typescript');
 
 
 
@@ -160,52 +160,44 @@ const pointIncreaser = () => {
 
 
     setInterval(() => {
-        if (html < 91) {
+        if (html < 95) {
             html = html + 1;
             progress_fill_html.innerText = html + '%';
         }
-        if (css < 85) {
+        if (css < 95) {
             css = css + 1;
             progress_fill_css.innerText = css + '%';
         }
 
 
-        if (javascript < 88) {
+        if (javascript < 90) {
             javascript = javascript + 1;
             progress_fill_javascript.innerText = javascript + '%';
         }
 
 
 
-        if (bootstrap < 85) {
+        if (bootstrap < 95) {
             bootstrap = bootstrap + 1;
             progress_fill_bootstrap.innerText = bootstrap + '%';
         }
 
 
 
-        if (tailwind < 60) {
+        if (tailwind < 95) {
             tailwind = tailwind + 1;
             progress_fill_tailwind.innerText = tailwind + '%';
         }
 
 
 
-        if (react < 85) {
+        if (react < 90) {
             react = react + 1;
             progress_fill_react.innerText = react + '%';
         }
 
 
-
-
-        if (next < 60) {
-            next = next + 1;
-            progress_fill_next.innerText = next + '%';
-        }
-
-
-        if (node < 50) {
+        if (node < 80) {
             node = node + 1;
             progress_fill_node.innerText = node + '%';
         }
@@ -214,7 +206,7 @@ const pointIncreaser = () => {
 
 
 
-        if (express < 85) {
+        if (express < 80) {
             express = express + 1;
             progress_fill_express.innerText = express + '%';
         }
@@ -222,23 +214,11 @@ const pointIncreaser = () => {
 
 
 
-        if (mongodb < 60) {
+        if (mongodb < 85) {
             mongodb = mongodb + 1;
             progress_fill_mongodb.innerText = mongodb + '%';
         }
 
-
-
-        if (redux < 60) {
-            redux = redux + 1;
-            progress_fill_redux.innerText = redux + '%';
-        }
-
-
-        if (typescript < 50) {
-            typescript = typescript + 1;
-            progress_fill_typescript.innerText = typescript + '%';
-        }
     }, 30)
 
 
@@ -257,13 +237,13 @@ progress_fill_css.innerText = css;
 progress_fill_javascript.innerText = javascript;
 progress_fill_bootstrap.innerText = bootstrap;
 progress_fill_react.innerText = react;
-progress_fill_next.innerText = next;
+// progress_fill_next.innerText = next;
 progress_fill_node.innerText = node;
 progress_fill_express.innerText = express;
 progress_fill_mongodb.innerText = mongodb;
 progress_fill_tailwind.innerText = tailwind;
-progress_fill_redux.innerText = redux;
-progress_fill_typescript.innerText = typescript;
+// progress_fill_redux.innerText = redux;
+// progress_fill_typescript.innerText = typescript;
 
 
 
@@ -400,16 +380,9 @@ for (item of skillsett) {
 
         // cover-page-activities
 
-
-
-
         navigateSound.play();
 
-
-
         pointIncreaser();
-
-
 
         skill_div.style.display = 'flex';
         skill_div.scrollIntoView({ behavior: 'smooth' });
@@ -423,52 +396,52 @@ for (item of skillsett) {
 
 
         progress_fill_html.style.width = '38vw';
-        progress_fill_html.style.transition = '2s';
+        progress_fill_html.style.transition = '1.5s';
 
-        progress_fill_css.style.width = '35vw';
-        progress_fill_css.style.transition = '2s';
+        progress_fill_css.style.width = '38vw';
+        progress_fill_css.style.transition = '1.5s';
 
 
 
         progress_fill_javascript.style.width = '37vw';
-        progress_fill_javascript.style.transition = '2s';
+        progress_fill_javascript.style.transition = '1.5s';
 
 
-        progress_fill_bootstrap.style.width = '35vw';
-        progress_fill_bootstrap.style.transition = '2s';
+        progress_fill_bootstrap.style.width = '38vw';
+        progress_fill_bootstrap.style.transition = '1.5s';
 
 
-        progress_fill_tailwind.style.width = '30vw';
-        progress_fill_tailwind.style.transition = '2s';
+        progress_fill_tailwind.style.width = '38vw';
+        progress_fill_tailwind.style.transition = '1.5s';
 
 
-        progress_fill_react.style.width = '38vw';
-        progress_fill_react.style.transition = '2s';
+        progress_fill_react.style.width = '37vw';
+        progress_fill_react.style.transition = '1.5s';
 
 
 
-        progress_fill_next.style.width = '30vw';
-        progress_fill_next.style.transition = '2s';
+        // progress_fill_next.style.width = '30vw';
+        // progress_fill_next.style.transition = '2s';
 
 
-        progress_fill_node.style.width = '25vw';
-        progress_fill_node.style.transition = '2s';
+        progress_fill_node.style.width = '35vw';
+        progress_fill_node.style.transition = '1.5s';
 
 
         progress_fill_express.style.width = '35vw';
-        progress_fill_express.style.transition = '2s';
+        progress_fill_express.style.transition = '1.5s';
 
 
 
-        progress_fill_mongodb.style.width = '30vw';
-        progress_fill_mongodb.style.transition = '2s';
+        progress_fill_mongodb.style.width = '36vw';
+        progress_fill_mongodb.style.transition = '1.5s';
 
-        progress_fill_redux.style.width = '30vw';
-        progress_fill_redux.style.transition = '2s';
+        // progress_fill_redux.style.width = '30vw';
+        // progress_fill_redux.style.transition = '2s';
 
 
-        progress_fill_typescript.style.width = '25vw';
-        progress_fill_typescript.style.transition = '2s';
+        // progress_fill_typescript.style.width = '25vw';
+        // progress_fill_typescript.style.transition = '2s';
     })
 }
 
