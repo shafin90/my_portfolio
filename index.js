@@ -36,7 +36,7 @@ const progress_fill_node = document.getElementById('progress-fill-node');
 const progress_fill_express = document.getElementById('progress-fill-express');
 const progress_fill_mongodb = document.getElementById('progress-fill-mongodb');
 // const progress_fill_redux = document.getElementById('progress-fill-redux');
-// const progress_fill_typescript = document.getElementById('progress-fill-typescript');
+const progress_fill_typescript = document.getElementById('progress-fill-typescript');
 
 
 
@@ -175,6 +175,10 @@ const pointIncreaser = () => {
             progress_fill_javascript.innerText = javascript + '%';
         }
 
+        if (typescript < 90) {
+            typescript = typescript + 1;
+            progress_fill_typescript.innerText = typescript + '%';
+        }
 
 
         if (bootstrap < 95) {
@@ -243,7 +247,7 @@ progress_fill_express.innerText = express;
 progress_fill_mongodb.innerText = mongodb;
 progress_fill_tailwind.innerText = tailwind;
 // progress_fill_redux.innerText = redux;
-// progress_fill_typescript.innerText = typescript;
+progress_fill_typescript.innerText = typescript;
 
 
 
@@ -440,8 +444,8 @@ for (item of skillsett) {
         // progress_fill_redux.style.transition = '2s';
 
 
-        // progress_fill_typescript.style.width = '25vw';
-        // progress_fill_typescript.style.transition = '2s';
+        progress_fill_typescript.style.width = '37vw';
+        progress_fill_typescript.style.transition = '2s';
     })
 }
 
